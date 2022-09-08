@@ -2,7 +2,8 @@ import React from 'react';
 import './MainPage.css';
 import animationData from '../lotties/red-heart-growing.json';
 import Lottie from 'react-lottie';
-import { Button, Card, CardBody, CardText, CardTitle, ListGroup } from 'reactstrap';
+import { Button, Card, CardBody, CardText, CardTitle, Input, ListGroup } from 'reactstrap';
+import { decrypt, encrypt } from '../util/Secret';
 
 export const MainPage = ({ setOpen }) => {
     const defaultOptions = {
@@ -13,6 +14,11 @@ export const MainPage = ({ setOpen }) => {
             preserveAspectRatio: "xMidYMid slice"
         }
     };
+
+    const handleInput = (e) => {
+        const key = e.target.value;
+        console.log("dec", decrypt(e.target.value, "skate"));
+    }
 
     return (
         <Card
@@ -29,9 +35,10 @@ export const MainPage = ({ setOpen }) => {
                 options={defaultOptions}
                 width={300}
             />
+            <Input onChange={handleInput} />
             <CardBody>
                 <CardText>
-                    В <b>6</b> часов <b>7</b> числа <b>8</b> месяца мы стретились с тобой, что это как не джекпот?
+                    В 6 часов 7 числа 8 месяца мы стретились с тобой, что это как не джекпот?
                 </CardText>
                 <ListGroup>
                     <li>Я благодарен за то, что ты появилась в моей жизни</li>
