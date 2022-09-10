@@ -28,7 +28,7 @@ function App() {
   return (
     <div className="App">
       {
-        !isOpen &&
+        isOpen &&
         <Row>
           <MainPage 
             setOpen={setOpen}
@@ -36,7 +36,7 @@ function App() {
         </Row>
       }
       {
-        isOpen &&
+        !isOpen &&
         <Lottie
           options={defaultOptions}
           width={300}
