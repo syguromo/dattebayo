@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/dattebayo/static/css/main.a4e704e7.css",
+    "main.js": "/dattebayo/static/js/main.401580b9.js",
+    "static/js/787.3bf7885d.chunk.js": "/dattebayo/static/js/787.3bf7885d.chunk.js",
+    "index.html": "/dattebayo/index.html",
+    "main.a4e704e7.css.map": "/dattebayo/static/css/main.a4e704e7.css.map",
+    "main.401580b9.js.map": "/dattebayo/static/js/main.401580b9.js.map",
+    "787.3bf7885d.chunk.js.map": "/dattebayo/static/js/787.3bf7885d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a4e704e7.css",
+    "static/js/main.401580b9.js"
+  ]
+}
